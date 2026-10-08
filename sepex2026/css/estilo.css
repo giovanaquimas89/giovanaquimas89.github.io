@@ -1,9 +1,17 @@
+header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
 .botao{
     background-color: #aaa;
     padding: 10px 30px;
     border-radius: 5px;
     text-decoration: none;
     color: #000;
+    margin: 15px;
 
 }
 
@@ -12,5 +20,43 @@
     transform: scale(1.05);
     color: #00f;
     box-shadow: 2px 5px 5px #888;
+    transition: all .2s;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.card{
+    animation: pulsar .5s ease;
+    animation-iteration-count: infinite;
+    padding: 7px 10px;
+    border-radius: 12px;
+    box-shadow: 2px 5px 5px 2px #888;
+    ho
+}
+@keyframes pulsar{
+    0%
+    33%
+    66%
+    100%
+}
+.programacao{
+    text-align: center;
+}
+.intro{
+    text-align: center;
+}
+.menu{
+    justify-content: right;
+    display: flex;
+    list-style: none;
+}
+footer{
+    text-align: center;
+}
+.card:hover{
+    transform: scale(1.05);
     transition: all .2s;
 }
