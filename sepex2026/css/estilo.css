@@ -1,12 +1,18 @@
+
+@media(min:481px) and (max:3000px)
+{
 header{
     display: flex;
     justify-content: space-between;
 
 }
-
+body{
+    background-color: lavender;
+    color:rgb(68, 68, 68);
+}
 
 .botao{
-    background-color: #aaa;
+    background-color: #888;
     padding: 10px 30px;
     border-radius: 5px;
     text-decoration: none;
@@ -16,10 +22,10 @@ header{
 }
 
 .botao:hover{
-    background-color: #aaf;
+    background-color:  rgb(165, 165, 206);
     transform: scale(1.05);
-    color: #00f;
-    box-shadow: 2px 5px 5px #888;
+    color:  rgb(62, 62, 131);
+    box-shadow: 2px 5px 5px rgb(68, 68, 68);
     transition: all .2s;
 }
 .cards{
@@ -29,21 +35,31 @@ header{
 
 }
 .card{
-    animation: pulsar .5s ease;
+    animation: pulsar .5s ease-in-out;
     animation-iteration-count: infinite;
-    padding: 7px 10px;
+    padding: 20px;
     border-radius: 12px;
+    background-color: rgb(165, 165, 206);
     box-shadow: 2px 5px 5px 2px #888;
-    ho
+    
 }
 @keyframes pulsar{
-    0%
-    33%
-    66%
-    100%
+    0%{
+        transform: scale(1);
+        opacity: 1;
+
+    }
+    50%{
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 .programacao{
-    text-align: center;
+     text-align:center;
 }
 .intro{
     text-align: center;
@@ -60,3 +76,4 @@ footer{
     transform: scale(1.05);
     transition: all .2s;
 }
+    }

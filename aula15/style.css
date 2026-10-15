@@ -1,0 +1,48 @@
+@media (max-width:480px) {
+    body {
+        background-color: darkslateblue;
+    }
+
+}
+
+@media(min-width:481px) and (max-width:991px)
+{
+    body{
+        background-color:lightskyblue;
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px)
+{
+    body{
+        background-color:cornflowerblue;
+    }
+}
+
+@media(min-width:1200px)
+{
+    body{
+        background-color: darkslateblue;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
