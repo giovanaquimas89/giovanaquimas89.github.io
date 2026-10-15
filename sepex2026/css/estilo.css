@@ -1,5 +1,5 @@
 
-@media(min:481px) and (max:3000px)
+@media(min-width:481px) and (max-width:3000px)
 {
 header{
     display: flex;
@@ -76,4 +76,72 @@ footer{
     transform: scale(1.05);
     transition: all .2s;
 }
-    }
+}
+
+
+
+
+@media(max-width:480px)
+{
+    header{
+    display: flex;
+    justify-content: space-between;
+
+}
+body{
+    background-color: lavender;
+    color:rgb(68, 68, 68);
+}
+
+.botao{
+    background-color: #888;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    margin: 15px;
+
+}
+
+.botao:hover{
+    background-color:  rgb(165, 165, 206);
+    transform: scale(1.05);
+    color:  rgb(62, 62, 131);
+    box-shadow: 2px 5px 5px rgb(68, 68, 68);
+    transition: all .2s;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.card{
+    
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgb(165, 165, 206);
+    box-shadow: 2px 5px 5px 2px #888;
+    
+}
+
+}
+.programacao{
+     text-align:center;
+}
+.intro{
+    text-align: center;
+}
+.menu{
+    justify-content: right;
+    display: flex;
+    list-style: none;
+}
+footer{
+    text-align: center;
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: all .2s;
+}
+
