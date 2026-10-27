@@ -1,0 +1,425 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.card-imagem img {
+    width: 100%;
+    height: 96px;
+}
+
+body {
+    background-color: #b0c4de;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: #2c3e50;
+}
+
+.principal {
+    width: 100%;
+    max-width: 950px;
+    background-color: #fff;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+.topo h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #2c3e50;
+    background-color: #d2dede;
+    padding: 14px 8px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    background-color: #b8c6d1;
+    padding: 12px 8px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.menu a:hover,
+.menu a.ativo {
+    color: #3b5998;
+}
+
+
+
+.banner {
+    background-color: #d2dede;
+    padding: 0 4px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.legenda {
+    background-color: #b8c6d1;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    font-size: 0.9rem;
+    color: #2c3e50;
+}
+
+.box-banner {
+    position: relative;
+    width: 100%;
+    min-height: 205px;
+    background-color: #d2dede;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.imagem-banner {
+    max-width: 100%;
+    max-height: 190px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+
+
+.botao-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #4d606e;
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.esquerda {
+    left: 18px;
+}
+
+.direita {
+    right: 18px;
+}
+
+.numeros-banner {
+    display: flex;
+    gap: 7px;
+    padding: 0 0 0 45px;
+    margin-top: -2px;
+    background-color: #d2dede;
+}
+
+.numero {
+    width: 29px;
+    height: 29px;
+    background-color: white;
+    border: 2px solid #c3d0da;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.numero.ativo {
+    background-color: #fff;
+    border-color: #9eafbb;
+}
+
+
+
+.grade-card {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.card {
+    border: 1px solid #bdcbd6;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.card-imagem {
+    background-color: #d2dede;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9eafbb;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #bdcbd6;
+}
+
+.card-conteudo {
+    padding: 8px 10px 12px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-conteudo h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.card-conteudo p {
+    font-size: 0.8rem;
+    color: #333;
+    line-height: 1.3;
+    margin-bottom: 12px;
+    flex-grow: 1;
+}
+
+.botao-veja-mais {
+    align-self: flex-end;
+    background-color: #6554f5;
+    color: white;
+    padding: 9px 13px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.botao-veja-mais:hover {
+    background-color: #5142d8;
+}
+
+.card-extra {
+    display: none;
+}
+
+
+
+.secao-baixo {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    align-items: stretch;
+}
+
+.box-texto {
+    border: 1px solid #9eafbb;
+    background-color: #d2dede;
+    padding: 12px;
+}
+
+.box-texto h2 {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    color: #2c3e50;
+}
+
+.box-texto p {
+    font-size: 0.78rem;
+    color: #333;
+    line-height: 1.35;
+    margin-bottom: 14px;
+}
+
+.card-depoimento {
+    border: 1px solid #bdcbd6;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.depoimento-imagem {
+    min-height: 140px;
+    background-color: #d2dede;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9eafbb;
+    font-size: 2.5rem;
+    border-bottom: 1px solid #bdcbd6;
+}
+
+.depoimento-conteudo {
+    padding: 10px;
+}
+
+.depoimento-conteudo h4 {
+    text-align: center;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.depoimento-conteudo p {
+    font-size: 0.75rem;
+    color: #333;
+    line-height: 1.35;
+}
+
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding-top: 8px;
+}
+
+.rodape p {
+    font-size: 0.78rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #333;
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.redes-sociais a {
+    color: #4d606e;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 12px;
+    }
+
+    .principal {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .topo h1 {
+        font-size: 1.65rem;
+    }
+
+    .grade-card {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .card-extra {
+        display: flex;
+    }
+
+    .card-imagem {
+        height: 96px;
+    }
+
+    .card-conteudo {
+        padding: 8px 10px 14px;
+    }
+
+    .card-conteudo h3 {
+        text-align: center;
+        font-size: 1.15rem;
+    }
+
+    .card-conteudo p {
+        font-size: 0.9rem;
+    }
+
+    .botao-veja-mais {
+        align-self: center;
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+
+    .secao-baixo {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .box-texto p {
+        font-size: 0.78rem;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    body {
+        padding: 8px;
+    }
+
+    .principal {
+        padding: 8px;
+    }
+
+    .topo h1 {
+        font-size: 1.35rem;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 20px;
+    }
+
+    .menu a {
+        font-size: 0.9rem;
+    }
+
+    .box-banner {
+        min-height: 170px;
+    }
+
+    .numeros-banner {
+        padding-left: 15px;
+    }
+
+    .grade-card,
+    .secao-baixo {
+        grid-template-columns: 1fr;
+    }
+
+    .card-extra {
+        display: flex;
+    }
+
+    .secao-baixo {
+        gap: 12px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .redes-sociais {
+        justify-content: center;
+    }
+}
