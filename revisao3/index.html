@@ -1,37 +1,166 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <title>wireframe</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <card>
-            <div class="imagem">
-                 <img src="">
-            </div>
-            <h1>Inteligência Artificial e o Futuro da tecnologia</h1>
-            
-            <div >
-            <i></i>
-            <p>Prof. Dr. Carlos Mendes</p>
-            </div>
-            <div class="info">
-            <div>
-                <i></i>
-                <p>24/04 . 19h30</p>
-            </div>
-            <div>
-                <i></i>
-                <p>Auditório Central</p>
-            </div>
-            </div>
-       
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana de Tecnologia - CEFET/RJ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
 
-            <p>Descubra como a IA está transformando o mundo e quais
-             são os próximos desafios</p>
+    <header class="cabecalho">
+        <div class="container cabecalho__conteudo">
+            <a href="#inicio" class="logo">
+                
+                <span>Semana de Tecnologia</span>
+            </a>
 
-             <button class="saibamais">Saiba mais-</button>
-        </card>
-    </body>
-</html> 
+            <nav class="menu">
+                <a href="#inicio" class="menu__link menu__link--ativo">Início</a>
+                <a href="#programacao" class="menu__link">Programação</a>
+                <a href="#palestrantes" class="menu__link">Palestrantes</a>
+                <a href="#inscricao" class="menu__link">Inscrição</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="banner" id="inicio">
+            <div class="banner__imagem"></div>
+
+            <div class="container banner__conteudo">
+                <h1>Semana de Tecnologia</h1>
+                <p>Tecnologia, inovação e criatividade</p>
+                <a href="#inscricao" class="btn btn-primary">
+                    Quero participar
+                </a>
+            </div>
+        </section>
+
+        <section class="programacao container py-5" id="programacao">
+            <h2 class="titulo-secao">Programação</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <article class="programacao__item">
+                        <h3>Palestra</h3>
+                        <p>Inteligência Artificial</p>
+                        <a href="#palestra-principal">Saiba mais-</a>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="programacao__item">
+                        <h3>Workshop</h3>
+                        <p>Tecnologia e inovação</p>
+                        <a href="#palestrantes">Saiba mais-</a>
+                    </article>
+                </div>
+
+                <div class="col-md-4">
+                    <article class="programacao__item">
+                        <h3>Hackathon</h3>
+                        <p>Desenvolvimento de projetos</p>
+                        <a href="#inscricao">Saiba mais-</a>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container py-5" id="palestra-principal">
+            <h2 class="titulo-secao">Palestra principal</h2>
+
+            <article class="card-palestra">
+                <div class="card-palestra__imagem">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200"
+                        alt="Palestrante apresentando conteúdo em um auditório">
+
+                    <span class="card-palestra__etiqueta">
+                        Palestra Principal
+                    </span>
+                </div>
+
+                <div class="card-palestra__conteudo">
+                    <h2>Inteligência Artificial<br>e o Futuro da Tecnologia</h2>
+
+                    <p class="card-palestra__informacao">
+                         Prof. Dr. Carlos Mendes
+                    </p>
+
+                    <div class="card-palestra__detalhes">
+                        <p> 24/04 • 19h30</p>
+                        <p> Auditório Central</p>
+                    </div>
+
+                    <hr>
+
+                    <p class="card-palestra__descricao">
+                        Descubra como a IA está transformando o mundo
+                        e quais são os próximos desafios.
+                    </p>
+
+                    <a href="#inscricao" class="btn btn-primary card-palestra__botao">
+                        Saiba mais →
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <section class="container py-5" id="palestrantes">
+            <h2 class="titulo-secao">Destaque do evento</h2>
+
+            <article class="card-destaque">
+                <div class="card-destaque__imagem">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200"
+                        alt="Palestrante apresentando uma palestra">
+                </div>
+
+                <div class="card-destaque__conteudo">
+                    <span class="card-destaque__etiqueta">
+                         Palestra Principal
+                    </span>
+
+                    <h2>Inteligência Artificial<br>e o Futuro da Tecnologia</h2>
+
+                    <p> Prof. Dra. Ana Torres</p>
+                    <p> 24/04 • 19h30</p>
+
+                    <p>
+                        Descubra como a IA está transformando o mundo
+                        e quais são os próximos desafios.
+                    </p>
+
+                    <a href="#inscricao" class="btn btn-primary">
+                        Saiba mais →
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <section class="inscricao container py-5" id="inscricao">
+            <div class="alert alert-primary text-center p-4">
+                <h2>Participe da Semana de Tecnologia!</h2>
+                <p>
+                   
+                </p>
+                <a href=""
+                    class="btn btn-primary">
+                    Quero participar
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>CEFET/RJ - Campus Nova Friburgo</p>
+        <p>Semana de Tecnologia</p>
+    </footer>
+
+</body>
+</html>
